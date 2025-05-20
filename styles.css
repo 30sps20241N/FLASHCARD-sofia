@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(235, 211, 183);
+    font-family: "Raleway", sans-serif;
+}
+footer {
+    background-color: rgb(194, 123, 123);
+    color: white;
+    bottom:0;
+    position:fixed;
+    width:100%;
+}
+footer p{
+    text-align: center;
+    font-size: 0.6rem;
+    height:2rem;
+    margin-top: 0,5rem;
+}
