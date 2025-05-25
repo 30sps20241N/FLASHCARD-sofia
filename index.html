@@ -15,43 +15,44 @@
 
 <main>
         <section id="container">
-                <article class="cartao">
+                <!-- <article class="cartao">
                         <div class="cartao__conteudo">
-                        <h3>EMPRESA</h3>
+                        <h3> EMPRESA </h3>
                                 <div class="cartao__conteudo__pergunta">
-                                        <p> Quem é o idealizador da Disney? </p>
+                                        <p> Quem fundou a Disney? </p>
                                 </div>
                                 <div class="cartao__conteudo__resposta">
                                 <p> Walter Elias Disney, mais conhecido como Walt Disney fundou a empresa Disney junto de seu irmão Roy Disney, no ano de 1923. </p>   
                                 </div>
                         </div>
-                </article>
-<article class="cartao">
-        <div class="cartao__conteudo">
-                <h3>PERSONAGENS</h3>
-                      <div class="cartao__conteudo_pergunta">
-                            <p> Quando Mickey Mouse foi criado? </p>
-                        </div>                        
-                       <div class="cartao__conteudo__resposta">
-                            <p> Mickey Mouse foi criado no ano de 1928, chegou a aparecer em Plane Crazy, como seu primeiro desenho animado, mas este inicialmente não chegou a ser lançado. Sendo assim, seu primeiro filme foi Steamboat Willie ("O Vapor Willie"), um curta metragem em preto e branco, sendo este também o 1° filme assinado por Walt. </p>
-                         </div>
-                        </div>
-         </article>
-         <article class="cartao"> 
-                <div class="cartao__conteudo"> 
-                        <h3> PARQUES </h3>
-                         <div class="cartao__conteudo__pergunta"> 
-                                <p> Qual o significado do nome do parque Magic Kingdom? </p> 
-                        </div>
-                       <div class="cartao__conteudo__resposta"> 
-                            <p> É o ponto principal da Disney e tem como atração central o castelo da Cinderela. Seu nome reflete a atmosfera de contos de fada que caracteriza o parque. </p>
-                                 </div> 
-                                </div>
-                         </article>
+                </article> -->
         </section>
 </main>
     <footer>
         <p>Projeto desenvolvido por SOFIA SILVA, 2025</p>
     </footer> 
+    <script src="app.js">
+ function criaCartao (categoria, pergunta, resposta) {
+        let container = document.getElementById('container')
+        let cartao = document.createElement('article')
+        cartao.className = 'cartao'
+ cartao.innerHTML = `
+ <div class="cartao__conteudo">
+ <h3> ${categoria} </h3>
+ <div class="cartao__conteudo__pergunta">
+         <p> ${pergunta} </p>
+         </div>
+         <div class="cartao__conteudo__resposta">
+                 <p> ${resposta} </p>
+                 </div>
+                 </div>
+`
+container.appendChild(cartao)
+}
+    </script>
+
+    <script src="perguntas.js">
+
+    </script>
 </body>
 </html>
