@@ -12,7 +12,7 @@
    <title> CURIOSIDADES SOBRE O MUNDO DISNEY</title>
 </head>
 <body>
-
+ <h1 style="text-align:center; color:rgb(235, 92, 175);">CURIOSIDADES SOBRE O MUNDO DISNEY</h1>
 <main>
         <section id="container">
                 <!-- <article class="cartao">
@@ -29,30 +29,10 @@
         </section>
 </main>
     <footer>
-        <p>Projeto desenvolvido por SOFIA SILVA, 2025</p>
+        <h5><a href="https://www.disney.com.br/">SAIBA MAIS</a></h5>
+        <h5>Projeto desenvolvido por SOFIA SILVA, 2025</h5>
     </footer> 
-    <script src="app.js">
- function criaCartao (categoria, pergunta, resposta) {
-        let container = document.getElementById('container')
-        let cartao = document.createElement('article')
-        cartao.className = 'cartao'
- cartao.innerHTML = `
- <div class="cartao__conteudo">
- <h3> ${categoria} </h3>
- <div class="cartao__conteudo__pergunta">
-         <p> ${pergunta} </p>
-         </div>
-         <div class="cartao__conteudo__resposta">
-                 <p> ${resposta} </p>
-                 </div>
-                 </div>
-`
-container.appendChild(cartao)
-}
-    </script>
-
-    <script src="perguntas.js">
-
-    </script>
+    <script src="app.js"></script>
+    <script src="perguntas.js"></script>
 </body>
 </html>
